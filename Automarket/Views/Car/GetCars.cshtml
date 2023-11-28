@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Automarket.Domain.Entity.Car>
+
+@{
+    Layout = "_Layout";
+}
+
+@foreach (var car in Model)
+{
+    <p>@car.Name</p>
+    <p>@car.Model</p>
+    <p>@car.Price</p>
+    <p>@car.Speed</p>
+    <p>@car.Type</p>
+    <p>@car.CreateDate</p><br/>
+}
